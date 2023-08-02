@@ -5,18 +5,19 @@ import MyOrder from '../MyOrder'
 import MyOrders from '../MyOrders'
 import NotFound from '../NotFound'
 import SignIn from '../SignIn'
+import Navbar from '../../Components/Navbar'
 import './App.css'
 
 const AppRoutes = () => {
   
   // Se crea un array y dentro objetos
   let routes = useRoutes([
-    { path: '/vite-react-practices/', element: <Home /> },
-    { path: '/vite-react-practices/my-account', element: <MyAccount /> },
-    { path: '/vite-react-practices/my-order', element: <MyOrder /> },
-    { path: '/vite-react-practices/my-orders', element: <MyOrders /> },
-    { path: '/vite-react-practices/*', element: <NotFound /> },
-    { path: '/vite-react-practices/sign-in', element: <SignIn /> }
+    { path: '/', element: <Home /> },
+    { path: '/my-account', element: <MyAccount /> },
+    { path: '/my-order', element: <MyOrder /> },
+    { path: '/my-orders', element: <MyOrders /> },
+    { path: '/*', element: <NotFound /> },
+    { path: '/sign-in', element: <SignIn /> }
   ])
 
   return routes
@@ -27,6 +28,7 @@ const App = () => {
   return (
     <BrowserRouter>
       <AppRoutes />
+      <Navbar />
     </BrowserRouter>
   )
 }

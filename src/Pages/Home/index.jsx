@@ -1,5 +1,5 @@
 
-function Home() {
+const Home = () => {
 
   return (
     <div className="bg-red-100">

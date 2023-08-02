@@ -1,5 +1,5 @@
 
-function NotFound() {
+const NotFound = () => {
 
   return (
     <div className="bg-red-100">

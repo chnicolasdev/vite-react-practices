@@ -1,5 +1,5 @@
 
-function MyOrder() {
+const MyOrder = () => {
 
   return (
     <div className="bg-red-100">
